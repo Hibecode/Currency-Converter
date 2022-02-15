@@ -12,14 +12,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:fontFamily="sans-serif"
         android:text="Currency Converter"
-        android:textColor="@color/black"
+        android:textColor="@color/titleColor"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textColor="@color/mainGreen"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTitle"
+        tools:layout_editor_absoluteY="77dp" />
 
     <TextView
         android:id="@+id/tvFrom"
@@ -93,7 +107,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
-        android:text="Convert"
+        android:text="CONVERT"
+        android:backgroundTint="@color/mainGreen"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spToCurrency" />
@@ -123,6 +138,8 @@
         app:layout_constraintTop_toBottomOf="@+id/spToCurrency"
         app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
